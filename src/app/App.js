@@ -18,6 +18,7 @@ import {
 } from "react-router-dom";
 
 import "./App.css";
+import NotFoundPage from "../components/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
       <Route path="authors/:name" element={<Author />} />
       <Route path="sign-up" element={<SignUp />} />
       <Route path="profile" element={<Profile />} />
-      {/* <Route path="*" element={<NotFoundPage />} /> */}
+      <Route path="*" element={<NotFoundPage />} />
     </Route>
   )
 );
